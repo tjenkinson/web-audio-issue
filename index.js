@@ -34,7 +34,7 @@ function run(combined) {
             const singleSegment = combine(segments.map((segment) => new Uint8Array(segment))).buffer;
             return scheduleSegments([singleSegment]);
         } else {
-            return combined ? scheduleSegments([singleSegment]) : scheduleSegments(segments);
+            return scheduleSegments(segments);
         }
     }).catch(console.error);
 

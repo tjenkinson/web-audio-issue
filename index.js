@@ -16,8 +16,9 @@ function combine(arrays) {
 }
   
 const urls = [];
-for(let i=0; i<4; i++) {
-    urls.push(`segments/out${pad(i, 3)}.opus`);
+for(let i=0; i<6; i++) {
+    // urls.push(`segments/out${pad(i, 3)}.opus`);
+    urls.push(`segments-tone/out${pad(i, 3)}.opus`);
 }
 
 function runIndividualSegments() {
